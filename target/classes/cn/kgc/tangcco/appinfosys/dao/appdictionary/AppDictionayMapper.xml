@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.tangcco.appinfosys.dao.appdictionary.AppDictionayMapper">
+<!-- 根据类型值id查询类型名称-->
+    <select id="getValueNameByValueId" resultType="AppDictionary" parameterType="String">
+        select * from data_dictionary where typeName = #{typeName}
+
+    </select>
+</mapper>
